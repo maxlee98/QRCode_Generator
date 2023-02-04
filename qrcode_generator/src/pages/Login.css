@@ -19,7 +19,6 @@
 
 .login-header {
   margin-bottom: 40px;
-  font-size: 36px;
 }
 
 .form-group {
@@ -31,10 +30,8 @@
   width: 100%;
   padding: 10px;
   font-size: 18px;
-  border: 1px solid black; /* Add this */
   border-radius: 5px;
   background-color: white;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .form-control:focus {

@@ -11,14 +11,19 @@ function LoginPage() {
     e.preventDefault();
 
     // Add your authentication logic here
-    console.log(`Username: ${username}, Password: ${password}`);
-    navigate("/home");
+    if (username === "admin" && password === "admin") {
+      console.log(`Username: ${username}, Password: ${password}`);
+      navigate("/home");
+    } else {
+      alert("Username or password is incorrect.");
+    }
   };
 
   return (
     <div className="login-body">
       <form className="login-form" onSubmit={handleSubmit}>
-        <h1 className="login-header">Login</h1>
+        <h1>QR Code Generator</h1>
+        <h2 className="login-header">Login</h2>
         <div className="form-group">
           <label htmlFor="username">Username:</label>
           <input
