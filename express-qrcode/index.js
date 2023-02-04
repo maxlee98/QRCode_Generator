@@ -11,7 +11,7 @@ app.use(cors());
 app.use(express.json());
 
 app.post("/qr-code", (req, res) => {
-  const { link, color } = req.body.data;
+  res.send("Hello World!");
 });
 
 app.listen(3001, () => {
